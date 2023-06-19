@@ -2,7 +2,7 @@
 
 /**
  * main - entry into the program
- * Return: alway zero on success
+ * Return: Always zero
  */
 
 int main(void)
@@ -21,10 +21,7 @@ int main(void)
 				putchar(' ');
 			}
 		}
-	
 	}
-
 	putchar('\n');
-
 	return (0);
 }
