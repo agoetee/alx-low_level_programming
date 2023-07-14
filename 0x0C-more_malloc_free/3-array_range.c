@@ -9,11 +9,12 @@
  */
 int *array_range(int min, int max)
 {
-	int *mem, i;
+	int *mem, i, length;
 
 	if (min > max)
 		return (NULL);
-	mem = malloc(sizeof(int) * (max - min + 1));
+	length = (max - min + 1);
+	mem = malloc(sizeof(int) * length);
 	if (mem == NULL)
 		return (NULL);
 	for (i = 0; i <= max; i++)
